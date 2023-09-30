@@ -1,0 +1,60 @@
+li {
+  display: inline;
+  margin-right: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.player-list-container {
+  padding: 20px;
+}
+
+.player-item {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.player-item:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.02);
+}
+
+.status-options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.status-button {
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.status-button.playing {
+  background-color: green;
+  color: white;
+}
+
+.status-button.not-playing {
+  background-color: red;
+  color: white;
+}
+
+.status-button.undecided {
+  background-color: yellow;
+  color: black;
+}
+
+.status-button:hover {
+  background-color: #333;
+  color: #fff;
+}
